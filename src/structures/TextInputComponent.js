@@ -23,6 +23,7 @@ class TextInputComponent extends BaseMessageComponent {
    * .setMaxLength(10)
    * .setPlaceholder('Write a text here')
    * .setRequired(true) // If it's required or not
+   * .setDisabled(false) // If it's disabled or not
    */
 
   constructor(data = {}) {
@@ -119,6 +120,17 @@ class TextInputComponent extends BaseMessageComponent {
 
   setRequired(required = true) {
     this.required = required;
+    return this;
+  }
+
+  /**
+   * Sets a Boolean if a Text Input Component is disabled. Default: false
+   * @param {Boolean} required
+   * @returns {TextInputComponent} A Text Input Component.
+   */
+
+  setDisabled(disabled = false) {
+    this.disabled = disabled;
     return this;
   }
 
