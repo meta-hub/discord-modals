@@ -44,6 +44,7 @@ class ModalActionRow {
         required: component.required,
         value: component.value,
         placeholder: component.placeholder,
+        disabled: component.disabled,
       };
     }
     if(component.type === 'SELECT_MENU') {
